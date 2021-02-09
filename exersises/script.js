@@ -53,5 +53,23 @@ btn2.addEventListener('click', function(){
 btn3.addEventListener('click', function(){
     let minus = input3.value - input4.value
     p4.innerText = minus;
-    btn3.style.backgroundColor = "red"
+    btn3.style.backgroundColor = "green"
+})
+
+btn4.addEventListener('click', function(){
+    let multiply = input3.value * input4.value
+    p4.innerText = multiply;
+    btn4.style.backgroundColor = "skyblue"
+})
+
+btn5.addEventListener('click', function(){
+    let split = input3.value / input4.value
+    p4.innerText = split;
+    btn5.style.backgroundColor = "pink"
+})
+
+btn6.addEventListener('click', function(){
+    let square = input3.value ** input4.value
+    p4.innerText = square;
+    btn6.style.backgroundColor = "yellow"
 })
