@@ -18,16 +18,17 @@ input1.addEventListener('input', function(event){
 })
  
 //2
-let p2 = document.querySelector('.p2')
-
-
-    p2 = Math.random();
-    button = Math.random();
-
-button.addEventListener('click', function(event){
-    p2.innerText = button;
-})
-
-
 let input2 = document.querySelector('#number');
 let button = document.querySelector('button');
+let p2 = document.querySelector('.p2');
+let dice = Math.floor
+(Math.random () * 6) + 1;
+
+input2.addEventListener('input', function(event){
+    if (input2 == dice){
+    p2.innerText = 'Правильно';
+}
+    else if (input2 != dice){
+    p2.innerText = 'Не правильно'
+}
+})
