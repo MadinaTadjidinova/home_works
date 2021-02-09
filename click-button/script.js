@@ -12,7 +12,9 @@ for (let i = 1; i <= 5; i++){
     ul.append(li);
     button.style.backgroundColor = "pink"
 }
+
 document.body.append(ul);
+
 
 //1
 buttons1.innerText = "Random color";
