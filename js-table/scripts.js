@@ -19,5 +19,4 @@ document.write("<br>")
 // document.write(example(5, 2));
 // document.write(example(5, 3));
 
-
 //рекусивный метод
