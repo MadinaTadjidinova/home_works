@@ -22,19 +22,18 @@ let input2 = document.querySelector('#number');
 let button = document.querySelector('#button');
 let p2 = document.querySelector('#p2');
 
-
+let dice = Math.floor(Math.random () * 6) + 1;
 button.addEventListener('click', function(event){
-    let dice = Math.floor(Math.random () * 6) + 1;
+
 
     if (input2 == dice){
-    p2.innerText = 'Правильно';
+    p2.innerText = 'Вы победили! Случаеное число это ' + dice;;
 }
     else if (input2 != dice){
-    p2.innerText = 'Не правильно'
+    p2.innerText = 'Вы проиграли! Случаеное число это ' + dice;
 }
 button.style.backgroundColor = "red"
 })
-
 
 //3
 let input3 = document.querySelector("#number1");
