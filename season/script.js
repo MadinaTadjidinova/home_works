@@ -9,3 +9,6 @@ else if (season <= 6){
 if (season <= 9){
     alert('Summer')
 }
+else if (season <= 12){
+    alert('Automn')
+}
