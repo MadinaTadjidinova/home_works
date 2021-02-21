@@ -14,20 +14,19 @@ tr.append(th2);
 tr.append(th3);
 document.body.append(table);
 
-fetch('./data.json')
-    .then(function(response){
+fetch('https://json-80da8-default-rtdb.firebaseio.com/list.json').then(function(response){
         return response.json();
     })
-    .then(function(json){
-        for (const key in json) {
+    .then(function(list){
+        for (const key in list) {
             let tr = document.createElement('tr');
             let td1 = document.createElement('td');
             let td2 = document.createElement('td');
             let td3 = document.createElement('td');
             
-            td1.innerText = json[key].id;
-            td2.innerText = json[key].name;
-            td3.innerText = json[key].wealth;
+            td1.innerText = list[key].id;
+            td2.innerText = list[key].name;
+            td3.innerText = list[key].wealth;
         
             table.append(tr);
             tr.append(td1);
